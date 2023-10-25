@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./styles/main.scss">
+    <!-- Lib Text Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Convite de aniversário</title>
+</head>
+<body>
+    
+    <div class="invitation">
+        <div class="container">
+            <div data-aos="fade-up" class="invitation__content">
+                <div>
+                    <p class="invitation__text invitation__text--is-colored">
+                        Estou fazendo aniversário
+                    </p>
+                    <div class="invitation__line"></div>
+                </div>
+                <h1 class="invitation__title">Leonardo Moretti</h1>
+                <p id="counter" class="invitation__text">
+                </p>
+                <p class="invitation__text">
+                    Você foi convidado para minha festa de aniversário de 21 anos!
+                </p>
+                <p class="invitation__text">
+                    Cidade Javascript, Rua HTML, número 404
+                </p>
+                <a class="invitation__button" href="#">
+                    Aceitar
+                </a>
+            </div>
+            <img data-aos="fade-down" class="invitation__image" src="./image/parabens.jpg" alt="Parabéns">
+        </div>
+    </div>
+
+    <!-- Lib Text Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./scripts/main.js"></script>
+
+</body>
+</html>

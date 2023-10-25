@@ -1,0 +1,32 @@
+@use 'variables.scss';
+@use 'invitation';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: variables.$bgColor;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    background-color: variables.$bgContainerColor;
+    height: 70vh;
+    gap: 4%;
+    padding: 0 56px;
+
+    @media (max-width: 760px) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 24px;
+    }
+}

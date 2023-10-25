@@ -1,0 +1,95 @@
+@use 'variables.scss';
+
+.invitation {
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: 'Lobster', sans-serif;
+        font-size: 4rem;
+        color: variables.$titleColor;
+        letter-spacing: 4px;
+        padding: 36px 0;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: variables.$textColor;
+        padding-top: 8px;
+        font-family: 'Courier New', Courier, monospace;
+        
+        &--is-colored {
+            font-weight: 700;
+            color: #7b7b7b;
+            font-size: 24px;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+
+    &__line {
+        border: 2px solid #7b7b7b;
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    &__image {
+        height: 400px;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    &__button {
+        margin-top: 16px;
+        width: 100px;
+        padding: 16px;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: variables.$titleColor;
+        color: #fff;
+
+        &:hover {
+            background:darken(variables.$titleColor, 2%);
+        }
+    }
+
+    @media (max-width: 1142px) {
+        &__image {
+            width: 350px;
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 760px) {
+        &__image {
+            width: 250px;
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 542px) {
+        &__title {
+            font-size: 3rem;
+        }
+        
+        &__text {
+            font-size: 16px;
+        }
+
+        &__line {
+            border: 1px solid #7b7b7b;
+        }
+
+        &__image {
+            width: 150px;
+            height: 120px;
+        }
+    }
+}
